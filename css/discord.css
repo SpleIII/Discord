@@ -58,7 +58,8 @@
   --background-secondary: var(--neutral-73);
   --background-primary: var(--neutral-73);
 
-  --text-normal: hsl(210 33.33% 86.67%);
+  --text-normal: #dcddde;
+  --text-strong: #f2f3f5;
   --text-muted: var(--neutral-23);
   --text-link: hsl(213.281 87.671% 71.373%);
   --text-brand: hsl(228.785 100% 79.02%);
@@ -103,7 +104,8 @@
   --background-secondary: var(--neutral-92);
   --background-primary: var(--neutral-92);
 
-  --text-normal: hsl(210 33.33% 86.67%);
+  --text-normal: #dcddde;
+  --text-strong: #f2f3f5;
   --text-muted: var(--neutral-29);
   --text-link: hsl(212.795 82.564% 61.765%);
   --text-brand: hsl(230.625 91.429% 72.549%);
@@ -145,8 +147,9 @@
   --background-secondary: var(--neutral-4);
   --background-primary: var(--neutral-4);
 
-  --text-normal: var(--neutral-27);
-  --text-muted: var(--neutral-41);
+  --text-normal: #2e3338;
+  --text-strong: #060607;
+  --text-muted: #5c5e66;
   --text-link: hsl(212 100% 48%);
   --text-brand: hsl(228.641 69.553% 54.902%);
   --text-positive: hsl(141 73% 35%);
@@ -402,6 +405,7 @@ ul {
   gap: var(--space-xs);
   padding: 0 var(--space-md);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1.5px 0 rgba(0, 0, 0, 0.04), 0 2px 0 rgba(0, 0, 0, 0.04);
+  color: var(--text-strong);
   font-weight: var(--font-weight-semibold);
   font-size: 16px;
   cursor: pointer;
@@ -488,7 +492,6 @@ ul {
   background: var(--background-mod-selected);
   color: var(--text-normal);
 }
-
 .channel__hash {
   flex-shrink: 0;
   font-size: 20px;
@@ -568,7 +571,7 @@ ul {
 .chat__title {
   font-size: 16px;
   font-weight: var(--font-weight-semibold);
-  color: var(--text-normal);
+  color: var(--text-strong);
 }
 
 .chat__divider {
@@ -665,8 +668,8 @@ ul {
 
 .message__author {
   font-size: 16px;
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-normal);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-strong);
   cursor: pointer;
 }
 
@@ -940,7 +943,7 @@ ul {
   padding: 6px var(--space-md);
   margin: 1px 0;
   border-radius: var(--radius-xs);
-  color: var(--text-muted);
+  color: var(--text-normal);
   font-size: 16px;
   font-weight: var(--font-weight-medium);
   text-align: left;
@@ -949,11 +952,11 @@ ul {
 
 .member:hover {
   background: var(--background-mod-hover);
-  color: var(--text-normal);
+  color: var(--text-strong);
 }
 
 .member.is-offline {
-  opacity: 0.4;
+  color: var(--text-muted);
 }
 
 .member__avatar {
@@ -1054,7 +1057,7 @@ ul {
 .rpc__title {
   font-size: 14px;
   font-weight: var(--font-weight-semibold);
-  color: var(--text-normal);
+  color: var(--text-strong);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1263,6 +1266,7 @@ ul {
   margin-top: var(--space-xs);
   font-size: 20px;
   font-weight: var(--font-weight-semibold);
+  color: var(--text-strong);
 }
 
 .popout__tag {
